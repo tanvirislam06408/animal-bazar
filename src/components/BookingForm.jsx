@@ -3,16 +3,10 @@ import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField, toast } from "@heroui/react";
 import { redirect } from "next/navigation";
 import React from 'react';
+import Swal from "sweetalert2";
 
 const BookingForm = () => {
 
-const showToast = () => {
-  toast({
-    title: "Booking Successful",
-    description: "Your booking has been submitted",
-    variant: "success",
-  });
-};
 
 
     const handleSubmit=(e)=>{
@@ -20,8 +14,16 @@ const showToast = () => {
         const formData=new FormData(e.currentTarget);
         const formInfo=Object.fromEntries(formData.entries());
         if(formInfo){
-            showToast()
+            Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Your Booking Is Now Conformed",
+  showConfirmButton: false,
+  timer: 1800
+});
         }
+
+        e.target.reset();
         
     }
 
@@ -86,13 +88,10 @@ const showToast = () => {
 
 
 
-                <div className="flex gap-2">
-                    <Button type="submit">
+                <div className="flex  gap-2">
+                    <Button type="submit" className={'w-full'}>
                         <Check />
-                        Submit
-                    </Button>
-                    <Button type="reset" variant="secondary">
-                        Reset
+                        Book Now
                     </Button>
                 </div>
             </Form>
