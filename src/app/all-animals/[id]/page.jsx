@@ -1,6 +1,7 @@
 import React from 'react';
 
-const AnimalPageDetails = () => {
+const AnimalPageDetails = async({params}) => {
+    const {id}=await params;
     return (
         <div>
             details
