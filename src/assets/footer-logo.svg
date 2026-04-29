@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90" width="160" height="90" role="img">
+  <title>QurbaniHaat Footer Logo</title>
+
+  <!-- Crescent moon arc behind icon for Eid/Qurbani feel -->
+  <path d="M80 8 A28 28 0 1 1 52 50 A20 20 0 1 0 80 8Z" fill="#2a7a50" opacity="0.18"/>
+
+  <!-- Icon circle bg -->
+  <circle cx="80" cy="34" r="22" fill="#1a5c3a"/>
+
+  <!-- Cow head (centered, white on green) -->
+  <!-- Body -->
+  <ellipse cx="80" cy="40" rx="10" ry="8" fill="#ffffff"/>
+  <!-- Head -->
+  <ellipse cx="80" cy="28" rx="7" ry="6.5" fill="#ffffff"/>
+  <!-- Left ear -->
+  <ellipse cx="72" cy="26" rx="2.8" ry="1.8" fill="#ffffff" transform="rotate(-22 72 26)"/>
+  <!-- Right ear -->
+  <ellipse cx="88" cy="26" rx="2.8" ry="1.8" fill="#ffffff" transform="rotate(22 88 26)"/>
+  <!-- Left horn -->
+  <path d="M74 23.5 Q70 18 72.5 17 Q74 20 75.5 22.5Z" fill="#d4a843"/>
+  <!-- Right horn -->
+  <path d="M86 23.5 Q90 18 87.5 17 Q86 20 84.5 22.5Z" fill="#d4a843"/>
+  <!-- Snout -->
+  <ellipse cx="80" cy="31.5" rx="3.5" ry="2.5" fill="#1a5c3a"/>
+  <!-- Nostrils -->
+  <circle cx="78.3" cy="31.7" r="0.9" fill="#ffffff"/>
+  <circle cx="81.7" cy="31.7" r="0.9" fill="#ffffff"/>
+  <!-- Eyes -->
+  <circle cx="76.5" cy="26.5" r="1.4" fill="#1a5c3a"/>
+  <circle cx="83.5" cy="26.5" r="1.4" fill="#1a5c3a"/>
+  <!-- Eye shine -->
+  <circle cx="77" cy="26" r="0.4" fill="#ffffff"/>
+  <circle cx="84" cy="26" r="0.4" fill="#ffffff"/>
+  <!-- Legs -->
+  <rect x="72" y="46" width="3.5" height="7" rx="1.8" fill="#ffffff"/>
+  <rect x="76.5" y="46" width="3.5" height="7" rx="1.8" fill="#ffffff"/>
+  <rect x="81" y="46" width="3.5" height="7" rx="1.8" fill="#ffffff"/>
+  <rect x="85.5" y="46" width="3.5" height="7" rx="1.8" fill="#ffffff"/>
+  <!-- Tail -->
+  <path d="M90 38 Q96 33 94 40" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="93.8" cy="40.5" r="1.8" fill="#d4a843"/>
+  <!-- Spots on body -->
+  <ellipse cx="78" cy="40" rx="3" ry="2.2" fill="#e8f5ee" opacity="0.5"/>
+  <ellipse cx="84" cy="43" rx="2" ry="1.5" fill="#e8f5ee" opacity="0.5"/>
+
+  <!-- Brand name centered below icon -->
+  <text x="80" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#1a5c3a" text-anchor="middle" letter-spacing="-0.2">Qurbani</text>
+  <!-- Gold accent bar -->
+  <rect x="52" y="76" width="56" height="2" rx="1" fill="#d4a843"/>
+  <!-- HAAT subtitle -->
+  <text x="80" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-weight="400" fill="#2a7a50" text-anchor="middle" letter-spacing="4">HAAT</text>
+</svg>

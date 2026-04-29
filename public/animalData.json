@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Deshi Shahi Cow",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 120000,
+    "weight": 280,
+    "age": 3,
+    "location": "Bogura",
+    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
+    "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30",
+    "category": "Large Animal"
+  },
+  {
+    "id": 2,
+    "name": "Jamunapari Goat",
+    "type": "Goat",
+    "breed": "Jamunapari",
+    "price": 35000,
+    "weight": 55,
+    "age": 2,
+    "location": "Rajshahi",
+    "description": "Tall and healthy goat with excellent meat quality. জনপ্রিয় কোরবানির পশু.",
+    "image": "https://images.unsplash.com/photo-1516467508483-a7212febe31a",
+    "category": "Medium Animal"
+  },
+  {
+    "id": 3,
+    "name": "Black Bengal Goat",
+    "type": "Goat",
+    "breed": "Black Bengal",
+    "price": 25000,
+    "weight": 35,
+    "age": 1.5,
+    "location": "Khulna",
+    "description": "Famous Black Bengal goat known for tender meat and fast growth.",
+    "image": "https://images.unsplash.com/photo-1595433562696-6c5e78f38b9f",
+    "category": "Medium Animal"
+  },
+  {
+    "id": 4,
+    "name": "Sahiwal Cow",
+    "type": "Cow",
+    "breed": "Sahiwal",
+    "price": 150000,
+    "weight": 320,
+    "age": 4,
+    "location": "Dhaka",
+    "description": "Premium Sahiwal cow with strong build and ভালো স্বাস্থ্য.",
+    "image": "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e",
+    "category": "Large Animal"
+  },
+  {
+    "id": 5,
+    "name": "Deshi Sheep",
+    "type": "Sheep",
+    "breed": "Local",
+    "price": 18000,
+    "weight": 40,
+    "age": 2,
+    "location": "Sylhet",
+    "description": "Healthy দেশি ভেড়া, ভালো মানের মাংস এবং সহজে পালনযোগ্য.",
+    "image": "https://images.unsplash.com/photo-1500595046743-793d5d7d3d8c",
+    "category": "Medium Animal"
+  },
+  {
+    "id": 6,
+    "name": "Australian Friesian Cow",
+    "type": "Cow",
+    "breed": "Friesian",
+    "price": 200000,
+    "weight": 400,
+    "age": 5,
+    "location": "Chattogram",
+    "description": "Imported Friesian cow with high milk production and excellent শরীরের গঠন.",
+    "image": "https://images.unsplash.com/photo-1546443046-ed1ce6ffd1ab",
+    "category": "Large Animal"
+  }
+]
