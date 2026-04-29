@@ -29,7 +29,7 @@ const BookingForm = () => {
 
 
     return (
-        <div className='flex flex-col  justify-center items-center h-full w-full border rounded-2xl shadow' >
+        <div className='flex flex-col  justify-center items-center h-full w-full border border-[#9AD872] rounded-2xl shadow' >
             <h1 className="text-2xl font-bold mt-5">Confirm Your Booking</h1>
             <Form onSubmit={handleSubmit} className="flex p-5 justify-center w-96 flex-col gap-4">
                 {/* name */}
@@ -89,7 +89,7 @@ const BookingForm = () => {
 
 
                 <div className="flex  gap-2">
-                    <Button type="submit" className={'w-full'}>
+                    <Button type="submit" className={'w-full bg-[#9AD872]'}>
                         <Check />
                         Book Now
                     </Button>
