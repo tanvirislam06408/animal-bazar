@@ -9,7 +9,7 @@ const DetailsAnimal = ({ matchedData }) => {
 
     return (
         <div className='px-7 md:px-5'>
-            <div className=' mt-4 mb-3'>
+            <div className=' mb-3'>
                 <Image loading='eager' src={image} className='rounded-2xl' width={600} height={500} alt={name} />
             </div>
 
