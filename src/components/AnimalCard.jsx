@@ -11,8 +11,8 @@ const AnimalCard = ({ animal }) => {
                 variant="transparent"
             >
                 <div className='relative aspect-square '>
-                    <Image src={animal.image} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={animal.type}
-                        className='bg-cover rounded-xl' />
+                    <Image src={animal.image} fill   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={animal.type}
+                        className='bg-cover rounded-xl w-auto h-auto' />
                 </div>
                 <h3 className="text-base font-semibold text-foreground">{animal.name}</h3>
                 <p className="text-sm text-muted">

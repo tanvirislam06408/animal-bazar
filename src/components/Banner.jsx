@@ -1,4 +1,5 @@
 import { Button } from '@heroui/react';
+import Link from 'next/link';
 import React from 'react';
 
 const Banner = () => {
@@ -12,7 +13,7 @@ const Banner = () => {
         <h1 className="text-white font-bold text-4xl">Find Your Perfect <br /> <span className='text-[#9AD872]'>Qurbani Animal</span> Today</h1>
 
         <p className='text-gray-300 mt-4'>Find healthy, verified cows and goats from trusted sellers across Bangladesh.</p>
-        <Button className={'bg-[#468432] mt-3'}>Find Animals</Button>
+        <Link href={'/all-animals'}><Button className={'bg-[#468432] mt-3'}>Find Animals</Button></Link>
       </div>
 
     </div>
