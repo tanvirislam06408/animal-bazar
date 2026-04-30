@@ -62,7 +62,7 @@ const LoginPage = () => {
             </div>
             <div className="border flex flex-col flex-1 items-center justify-center  py-8 border-[#9AD872] rounded-2xl w-full">
                 <h1 className="font-semibold text-xl">Login Now</h1>
-                <Form onSubmit={handleSubmit} className="flex p-5 justify-center w-96 flex-col gap-4">
+                <Form onSubmit={handleSubmit} className="flex p-5 justify-center md:w-96 w-full flex-col gap-4">
     
                     <TextField
                         isRequired
