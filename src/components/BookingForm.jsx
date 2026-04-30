@@ -9,29 +9,29 @@ const BookingForm = () => {
 
 
 
-    const handleSubmit=(e)=>{
+    const handleSubmit = (e) => {
         e.preventDefault();
-        const formData=new FormData(e.currentTarget);
-        const formInfo=Object.fromEntries(formData.entries());
-        if(formInfo){
+        const formData = new FormData(e.currentTarget);
+        const formInfo = Object.fromEntries(formData.entries());
+        if (formInfo) {
             Swal.fire({
-  position: "top-end",
-  icon: "success",
-  title: "Your Booking Is Now Conformed",
-  showConfirmButton: false,
-  timer: 1800
-});
+                position: "top-end",
+                icon: "success",
+                title: "Your Booking Is Now Conformed",
+                showConfirmButton: false,
+                timer: 1800
+            });
         }
 
         e.target.reset();
-        
+
     }
 
 
     return (
         <div className='flex flex-col  justify-center items-center h-full w-full border border-[#9AD872] rounded-2xl shadow' >
             <h1 className="text-2xl font-bold mt-5">Confirm Your Booking</h1>
-            <Form onSubmit={handleSubmit} className="flex p-5 justify-center w-96 flex-col gap-4">
+            <Form onSubmit={handleSubmit} className="flex p-5 justify-center md:w-96 w-full flex-col gap-4">
                 {/* name */}
                 <TextField
                     isRequired

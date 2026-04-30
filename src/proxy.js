@@ -10,9 +10,9 @@ export async function proxy(request) {
         headers: await headers()
     })
     if(!session){
-        return NextResponse.redirect(new URL('/register', request.url))
+        return NextResponse.redirect(new URL('/login', request.url))
     }
-    return NextResponse.next();
+    
 }
  
 export const config = {

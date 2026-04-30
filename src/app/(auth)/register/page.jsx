@@ -15,8 +15,8 @@ import { useRouter } from "next/navigation";
 
 
 const RegisterPage = () => {
-;
-    const router=useRouter();
+    ;
+    const router = useRouter();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -28,7 +28,7 @@ const RegisterPage = () => {
             password: password,
             email: email,
             photo: image,
-            
+
         })
 
 

@@ -10,8 +10,10 @@ const AnimalPageDetails = async({params}) => {
     
     return (
         <div className='flex p-6 md:p-0 flex-col md:flex-row space-y-5 container mx-auto gap-5 mt-20'>
-           <DetailsAnimal matchedData={matchedData}/>
+           <div className='flex-1'>
+            <DetailsAnimal  matchedData={matchedData}/>
 
+           </div>
            {/* form */}
            <div className='w-full flex-1'>
                 <BookingForm/>
