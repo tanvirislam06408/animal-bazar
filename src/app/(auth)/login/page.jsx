@@ -7,7 +7,7 @@ import loginAnimation from '../../../../public/login.json'
 import { IoLogoGoogle } from "react-icons/io";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
-import SocialBtn from "@/components/SocialBtn";
+import SocialBtn from "@/components/shared/SocialBtn";
 
 
 
@@ -89,12 +89,6 @@ const LoginPage = () => {
                         validate={(value) => {
                             if (value.length < 8) {
                                 return "Password must be at least 8 characters";
-                            }
-                            if (!/[A-Z]/.test(value)) {
-                                return "Password must contain at least one uppercase letter";
-                            }
-                            if (!/[0-9]/.test(value)) {
-                                return "Password must contain at least one number";
                             }
                             return null;
                         }}

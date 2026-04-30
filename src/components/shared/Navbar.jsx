@@ -4,9 +4,10 @@ import { Avatar, Button } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import navImg from '../assets/nav-logo.svg'
+import navImg from '../../assets/nav-logo.svg'
 import { authClient } from '@/lib/auth-client';
 import { GoSignOut } from 'react-icons/go';
+import MyLinks from './MyLinks';
 const Navbar = () => {
     const { data: session } = authClient.useSession();
     console.log(session);
@@ -18,9 +19,9 @@ const Navbar = () => {
                     <Link href={'/'}><Image src={navImg} height={50} width={200} alt='nav-logo' /></Link>
                 </div>
                 <ul className="flex items-center gap-4">
-                    <li className='hover:text-[#9AD872]'><Link href="/">Home</Link></li>
-                    <li className='hover:text-[#9AD872]'><Link href="/all-animals">All Animals</Link></li>
-                    <li className='hover:text-[#9AD872]'><Link href="/profile">Profile</Link></li>
+                    <li className='hover:text-[#9AD872]'><MyLinks href="/">Home</MyLinks></li>
+                    <li className='hover:text-[#9AD872]'><MyLinks href="/all-animals">All Animals</MyLinks></li>
+                    <li className='hover:text-[#9AD872]'><MyLinks href="/profile">Profile</MyLinks></li>
                 </ul>
                 {!session?.user &&
                     <div className='flex items-center gap-4'>

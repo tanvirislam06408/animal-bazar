@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimalCard from './AnimalCard';
+import AnimalCard from './shared/AnimalCard';
 import { getAnimalsData } from '@/lib/dataFetch';
 
 

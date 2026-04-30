@@ -7,16 +7,16 @@ import registerAnimation from '../../../../public/register.json'
 import { IoLogoGoogle } from "react-icons/io";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
-import SocialBtn from "@/components/SocialBtn";
+import SocialBtn from "@/components/shared/SocialBtn";
+import { useRouter } from "next/navigation";
 
 
 
 
 
 const RegisterPage = () => {
-
-
-
+;
+    const router=useRouter();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -28,8 +28,9 @@ const RegisterPage = () => {
             password: password,
             email: email,
             photo: image,
-            callbackURL: "/login"
+            
         })
+
 
         if (data?.user) {
             Swal.fire({
@@ -38,7 +39,9 @@ const RegisterPage = () => {
                 showConfirmButton: false,
                 timer: 1800
             });
+
             e.target.reset();
+            router.push('/login')
 
         }
 
@@ -48,7 +51,7 @@ const RegisterPage = () => {
                 icon: "error",
                 draggable: true
             })
-             e.target.reset();
+            e.target.reset();
         }
 
 
@@ -135,7 +138,7 @@ const RegisterPage = () => {
                     <p className="text-sm">Already Have An Account ? <Link href={'/login'} className="text-blue-500">Login</Link></p>
                 </Form>
                 or
-                <SocialBtn/>
+                <SocialBtn />
             </div>
         </div>
     );

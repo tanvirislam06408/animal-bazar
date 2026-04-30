@@ -7,7 +7,7 @@ const AnimalCard = ({ animal }) => {
     return (
         <div>
             <Surface
-                className="flex  flex-col gap-3 rounded-3xl border p-6"
+                className="flex  flex-col gap-3 rounded-3xl shadow p-6"
                 variant="transparent"
             >
                 <div className='relative aspect-square '>

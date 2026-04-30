@@ -6,7 +6,7 @@ import React from 'react';
 const AnimalPageDetails = async({params}) => {
     const data=await getAnimalsData()
     const {id}=await params;
-    const matchedData=data.find(animal=>animal.id=== Number(id));
+    const matchedData=data.find(animal=>Number(animal.id)=== Number(id));
     
     return (
         <div className='flex p-6 md:p-0 flex-col md:flex-row space-y-5 container mx-auto gap-5 mt-20'>
