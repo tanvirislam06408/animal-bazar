@@ -9,7 +9,7 @@ const AnimalCard = ({ animal }) => {
     return (
         <div>
             <Surface
-                className="flex  flex-col gap-3 rounded-3xl shadow p-6"
+                className="flex  h-full flex-col gap-3 rounded-3xl shadow p-6"
                 variant="transparent"
             >
                 <div className='relative aspect-square '>
@@ -19,7 +19,7 @@ const AnimalCard = ({ animal }) => {
                 </div>
                 <h3 className="text-base font-semibold text-foreground">{animal.name}</h3>
                 <p className="text-sm text-muted">
-                    {animal.description}
+                    {animal.description.slice(0,150)}...
                 </p>
                 <Link href={`/all-animals/${animal.id}`}>
                     <Button className={'bg-[#99AD7A] hover:bg-[#99AD7A50]'} variant="tertiary">
