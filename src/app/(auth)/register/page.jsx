@@ -7,6 +7,7 @@ import registerAnimation from '../../../../public/register.json'
 import { IoLogoGoogle } from "react-icons/io";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
+import SocialBtn from "@/components/SocialBtn";
 
 
 
@@ -134,10 +135,7 @@ const RegisterPage = () => {
                     <p className="text-sm">Already Have An Account ? <Link href={'/login'} className="text-blue-500">Login</Link></p>
                 </Form>
                 or
-                <Button className="w-full max-w-85" variant="tertiary">
-                    <IoLogoGoogle />
-                    Sign in with Google
-                </Button>
+                <SocialBtn/>
             </div>
         </div>
     );

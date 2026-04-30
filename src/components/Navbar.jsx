@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@heroui/react';
+import { Avatar, Button } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -29,7 +29,11 @@ const Navbar = () => {
                 }
                 {session?.user &&
                     <div className='flex items-center gap-4'>
-                        <Button onClick={async()=>await authClient.signOut()} className={'bg-[#9AD872]'}><GoSignOut /> Sign Out</Button> 
+                        <Avatar>
+                            <Avatar.Image alt="John Doe" referrerPolicy='no-referrer' src={session?.user?.image}/>
+                            <Avatar.Fallback>{session?.user?.name[0]}</Avatar.Fallback>
+                        </Avatar>
+                        <Button onClick={async () => await authClient.signOut()} className={'bg-[#9AD872]'}><GoSignOut /> Sign Out</Button>
                     </div>}
             </header>
         </nav >
