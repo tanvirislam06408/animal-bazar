@@ -22,12 +22,12 @@ const RegisterPage = () => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const formInfo = Object.fromEntries(formData.entries());
-        const { name, email, password, photo } = formInfo;
+        const { name, email, password, image } = formInfo;
         const { data, error } = await authClient.signUp.email({
             name: name,
             password: password,
             email: email,
-            photo: photo,
+            photo: image,
             callbackURL: "/login"
         })
 
@@ -119,7 +119,7 @@ const RegisterPage = () => {
                     {/* photo url */}
                     <TextField
                         isRequired
-                        name="photo"
+                        name="image"
                         type="url"
                     >
                         <Label>Photo Url</Label>

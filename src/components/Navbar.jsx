@@ -20,6 +20,7 @@ const Navbar = () => {
                 <ul className="flex items-center gap-4">
                     <li className='hover:text-[#9AD872]'><Link href="/">Home</Link></li>
                     <li className='hover:text-[#9AD872]'><Link href="/all-animals">All Animals</Link></li>
+                    <li className='hover:text-[#9AD872]'><Link href="/profile">Profile</Link></li>
                 </ul>
                 {!session?.user &&
                     <div className='flex items-center gap-4'>
