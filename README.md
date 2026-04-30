@@ -75,8 +75,20 @@ npm run dev
 - **Profile**: Manage your account and bookings
 
 ## Screenshots
+#All-Animas-Page
+<img width="1905" height="1728" alt="a08-ten vercel app_ (1)" src="https://github.com/user-attachments/assets/172747a7-d11d-4797-8f6a-b38b2a2d3194" />
+#Home-Page
+<img width="1905" height="2511" alt="a08-ten vercel app_" src="https://github.com/user-attachments/assets/f2a9b924-a316-478d-b096-79b8564bed78" />
+#animal-details-page
+<img width="1905" height="1055" alt="a08-ten vercel app_all-animals_2" src="https://github.com/user-attachments/assets/194012f4-e25e-4281-b2cd-ac90f74e6291" />
+#SignUP-Page
+<img width="1905" height="1177" alt="a08-ten vercel app_register" src="https://github.com/user-attachments/assets/8389f476-fb4a-4b34-8082-c1178c16ec53" />
 
-<!-- Add screenshots of the landing page here -->
+
+
+
+
+
 
 ## Live Demo
 
