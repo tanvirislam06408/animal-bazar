@@ -21,19 +21,18 @@ const LoginPage = () => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const formInfo = Object.fromEntries(formData.entries());
-        const { name, email, password, photo } = formInfo;
-        const { data, error } = await authClient.signUp.email({
-            name: name,
-            password: password,
+        const {  email, password} = formInfo;
+        const { data, error } = await authClient.signIn.email({
+        
             email: email,
-            photo: photo,
-            callbackURL: "/login"
+            password: password,
+            callbackURL: "/"
         })
 
         if (data?.user) {
             Swal.fire({
                 icon: "success",
-                title: `SignUp Successfully as ${data?.user.name}`,
+                title: `Login Successfully as ${data?.user.name} !`, 
                 showConfirmButton: false,
                 timer: 1800
             });
@@ -61,19 +60,9 @@ const LoginPage = () => {
                 <Lottie animationData={loginAnimation} />
             </div>
             <div className="border flex flex-col flex-1 items-center justify-center  py-8 border-[#9AD872] rounded-2xl w-full">
-                <h1 className="font-semibold text-xl">Register Now</h1>
+                <h1 className="font-semibold text-xl">Login Now</h1>
                 <Form onSubmit={handleSubmit} className="flex p-5 justify-center w-96 flex-col gap-4">
-                    {/* name */}
-                    <TextField
-                        isRequired
-                        name="name"
-                        type="text"
-                    >
-                        <Label>Your Name</Label>
-                        <Input placeholder="write your name" />
-                        <FieldError />
-                    </TextField>
-
+    
                     <TextField
                         isRequired
                         name="email"
@@ -115,20 +104,9 @@ const LoginPage = () => {
 
                     </TextField>
 
-                    {/* photo url */}
-                    <TextField
-                        isRequired
-                        name="photo"
-                        type="url"
-                    >
-                        <Label>Photo Url</Label>
-                        <Input placeholder="Enter your Photo Url" />
-                        <FieldError />
-                    </TextField>
-
                     <div className="flex  gap-2">
-                        <Button type="submit" className={'w-full bg-[#9AD872]'}>
-                            Register
+                        <Button type="submit"  className={'w-full bg-[#9AD872] '}>
+                            Login
                         </Button>
                     </div>
                     <p className="text-sm">Don't Have An Account ? <Link href={'/register'} className="text-blue-500">Register</Link></p>
