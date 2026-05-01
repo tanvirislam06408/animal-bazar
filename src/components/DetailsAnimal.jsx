@@ -19,7 +19,7 @@ const DetailsAnimal = ({ matchedData }) => {
                     <p className='font-medium'>{description}</p>
         <Separator orientation='horizontal'/>
                     <h2 className=' font-medium text-gray-500'>Type : {type}</h2>
-                    <p className=' font-medium text-gray-500'>Weight : {weight}</p>
+                    <p className=' font-medium text-gray-500'>Weight : {weight} KG</p>
                     <p className='flex items-center gap-2 font-medium text-gray-500'>Price : <TbCoinTakaFilled /> {price}</p>
                 </div>
                 <div className='flex-1 '>
