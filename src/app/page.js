@@ -8,10 +8,12 @@ export default function Home() {
   return (
     <div>
       {/* <Banner/> */}
-      <BannerSlider/>
-      <Featured/>
-      <QurbaniTips/>
-      <Faq/>
+      <div className="container mx-auto px-3 mt-5">
+        <BannerSlider />
+      </div>
+      <Featured />
+      <QurbaniTips />
+      <Faq />
     </div>
   );
 }

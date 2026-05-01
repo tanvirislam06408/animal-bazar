@@ -10,12 +10,20 @@ import BannerCard2 from './BannerCard2';
 
 const BannerSlider = () => {
     return (
-        <div>
-            <Carousel autoPlay={true} infiniteLoop={true} swipeable={true}>
-                <Banner/>
-                <BannerCard/>
-                <BannerCard2/>
+        <div >
+            <Carousel autoPlay={true} 
+                infiniteLoop={true} 
+                swipeable={true}
                 
+                showThumbs={false}
+                showStatus={false}
+                transitionTime={500}
+                stopOnHover={true}
+            >
+                <Banner />
+                <BannerCard />
+                <BannerCard2 />
+
             </Carousel>
         </div>
     );
